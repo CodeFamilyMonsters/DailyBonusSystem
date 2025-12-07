@@ -5,7 +5,7 @@ Usage:
 bonusSystem = new DailyBonusSystem();
 boolean claimedToday = bonusSystem.hasClaimedToday(player.lastClaimTs, player.getTime());
 boolean claimedYesterday = bonusSystem.hasClaimedYesterday(player.lastClaimTs, player.getTime());
-dayClaimed = player.getClaimDay();
+int dayClaimed = player.getClaimDay();
 
 if (!claimedToday) {
   //... give bonus or show claim button
